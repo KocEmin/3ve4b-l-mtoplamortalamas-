@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ciftsayibulma {
+    public static void main(String[] args) {
+        Scanner girdi = new Scanner(System.in);
+        int sayi;
+
+        System.out.print("Bir sayı giriniz :");
+        sayi = girdi.nextInt();
+
+        int sayac = 0;
+        int toplam = 0;
+        int i = 1;
+        while (i <= sayi) {
+
+            if (i % 3 == 0 && i % 4 == 0) {
+                toplam = toplam + i;
+                sayac = sayac + 1;
+            }
+            i++;
+        }
+        System.out.println(toplam / sayac);
+
+    }
+}
